@@ -1,0 +1,56 @@
+body {
+    font-family: 'Fredoka One', cursive; /* Fun and cool font */
+    background-color: white;
+    color: black;
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: transparent; /* Transparent background for menu */
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+  }
+  
+  .hero {
+    background-image: url("https://i.ibb.co/YQdqrwJ/openart-image-RVi33lr7-1715650818970-raw.jpg");
+    background-size: cover;
+    height: 500px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 48px; /* Adjust as needed */
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+  }
+
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
