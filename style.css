@@ -1,32 +1,34 @@
 body {
-    font-family: 'Fredoka One', cursive; /* Fun and cool font */
+    font-family: 'Fredoka One', cursive;
     background-color: white;
     color: black;
     margin: 0;
+    font-size: 30px; /* Triple the original size */
   }
   
   nav ul {
     list-style: none;
     padding: 0;
-    background-color: transparent; /* Transparent background for menu */
+    background-color: transparent;
     text-align: center;
   }
   
   nav li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 60px; /* Triple the original margin */
   }
   
   nav a {
     text-decoration: none;
     color: black;
-    font-size: 10px;
+    font-size: 30px; /* Triple the original size */
   }
   
   .hero {
     background-image: url("https://i.ibb.co/YQdqrwJ/openart-image-RVi33lr7-1715650818970-raw.jpg");
-    background-size: cover;
-    height: 500px; /* Adjust as needed */
+    background-size: cover; /* Cover the whole viewport */
+    background-position: center;
+    min-height: 100vh; /* Ensure it covers the full height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,22 +37,23 @@ body {
   }
   
   .hero h1 {
-    font-size: 48px; /* Adjust as needed */
+    font-size: 144px; /* Triple the original size */
   }
   
-  footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 12px;
-  }
-
   .container {
-    text-align: center;
-    padding: 20px;
+    text-align: left;
+    padding: 60px; /* Triple the original padding */
   }
   
   .container img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 60px; /* Triple the original margin */
   }
+  
+  footer {
+    text-align: center;
+    padding: 60px; /* Triple the original padding */
+    font-size: 36px; /* Triple the original size */
+  }
+  

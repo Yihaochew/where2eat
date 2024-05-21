@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Useful Links</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5hG-Od1EKfzGYf0f9qLD7uc5H1suZSt0&callback=initMap" async defer></script> 
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="useful_links.html">Useful Links</a></li>
+      <li><a href="credits.html">Credits</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Find Your Perfect Meal</h2>
+
+    <label for="cuisine">Type of Cuisine:</label>
+    <select id="cuisine">
+      <option value="Any">Any</option>
+      <option value="Japanese">Japanese</option>
+      <option value="Korean">Korean</option> 
+      <option value="Chinese">Chinese</option> 
+      <option value="Thai">Thai</option> 
+      <option value="Vietnamese">Vietnamese</option> 
+    </select><br><br>
+
+    <label for="budget">Budget:</label>
+    <select id="budget">
+      <option value="Any">Any</option>
+      <option value="$">$</option>
+      <option value="$$">$$</option>
+      <option value="$$$">$$$</option>
+      <option value="$$$$">$$$$</option>
+    </select><br><br>
+
+    <label for="location">Location:</label>
+    <select id="location">
+      <option value="Any">Any</option>
+      <option value="North">North</option>
+      <option value="South">South</option>
+      <option value="East">East</option>
+      <option value="West">West</option>
+      <option value="Central">Central</option>
+    </select><br><br>
+
+    <label for="meal-type">Meal Type:</label>
+    <select id="meal-type">
+      <option value="Any">Any</option>
+      <option value="Breakfast">Breakfast</option>
+      <option value="Brunch">Brunch</option>
+      <option value="Lunch">Lunch</option>
+      <option value="Tea-time">Tea-time</option>
+      <option value="Dinner">Dinner</option>
+      <option value="Supper">Supper</option>
+    </select><br><br>
+
+    <label for="public-transport">Accessible by Public Transport:</label>
+    <select id="public-transport">
+      <option value="Any">Any</option>
+      <option value="true">Yes</option>
+      <option value="false">No</option>
+    </select><br><br>
+
+    <button onclick="generateRecommendations()">Search</button><br><br>
+
+    <div id="results"></div>
+  </div>
+
+  <div id="map" style="width: 100%; height: 400px;"></div>
+
+  <footer>
+    <p>Disclaimer: This website is created for learning purposes only. The information provided here should not be considered professional advice. While we strive for accuracy, we make no guarantees regarding the completeness or reliability of the content. Any actions you take based on this information are at your own risk. We are not liable for any losses or damages incurred from the use of this website.</p>
+  </footer>
+
+  <script src="script.js"></script> 
+</body>
+</html>
