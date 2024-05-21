@@ -81,4 +81,13 @@ async function initMap() {
   }
   
   window.initMap = initMap;
-  
+
+const map = new google.maps.Map(document.getElementById("map"), {
+  zoom: 12,
+  center: { lat: 1.3521, lng: 103.8198 }, 
+});
+
+require('dotenv').config();
+
+// Now you can access the environment variables like this:
+const apiKey = process.env.GOOGLE_MAPS_API_KEY;
