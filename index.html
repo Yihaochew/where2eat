@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Food Recommendations</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5hG-Od1EKfzGYf0f9qLD7uc5H1suZSt0&callback=initMap" async defer></script>
-
+    <title>Food Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li>
-        <a href="index.html">
-          <img src="Images/homelogo.jpg" alt="Home"> Home
-        </a>
-      </li>
-      <li>
-        <a href="about.html">
-          <img src="Images/about.jpg" alt="About"> About
-        </a>
-      </li>
-      <li>
-        <a href="useful_links.html">
-          <img src="Images/Recommendation.png" alt="Useful Links"> Recommender
-        </a>
-      </li>
-      <li>
-        <a href="credits.html">
-          <img src="Images/clap.png" alt="Credits"> Credits
-        </a>
-      </li>
-    </ul>
-  </nav>
 
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="Images/homelogo.jpg" alt="Home"> Home</a></li>
+            <li><a href="about.html"><img src="Images/about.jpg" alt="About"> About</a></li>
+            <li><a href="useful_links.html"><img src="Images/Recommendation.png" alt="Useful Links"> Recommender</a></li>
+            <li><a href="credits.html"><img src="Images/clap.png" alt="Credits"> Credits</a></li>
+        </ul>
+    </nav>
 
-  <div class="hero">
-    <h1>Hello, welcome!</h1>
-  </div>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Food Wonderland!</h1>
+            <p>Discover deliciousness in every bite.</p>
+        </div>
+    </section>
 
-  <footer>
-    <p>Disclaimer: This website is created for learning purposes only. The information provided here should not be considered professional advice. While we strive for accuracy, we make no guarantees regarding the completeness or reliability of the content. Any actions you take based on this information are at your own risk. We are not liable for any losses or damages incurred from the use of this website.</p>
-  </footer>
+    <section class="featured-section">
+      <h2 class="section-title">Featured Delights</h2>
+      <button id="feelingLuckyBtn">Feeling Lucky?</button>
+      <div class="featured-items">
+      </div>
+  </section>
 
-  <script src="script.js"></script> </body>
+    <section class="quote-section">
+        <p class="quote">"Life is too short to eat boring food."</p>
+    </section>
+
+    <section class="about-section">
+        <h2 class="section-title">Who We Are</h2>
+        <p>We're a bunch of food enthusiasts on a mission to help you find the tastiest treats in town. Join us on our culinary adventure!</p>
+    </section>
+
+    <footer>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

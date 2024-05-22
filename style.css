@@ -1,5 +1,5 @@
 body {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Lora';
     background-color: white;
     color: black;
     margin: 0;
@@ -141,4 +141,64 @@ body {
   }
 
   /* Add more mobile-specific styles as needed */
+}
+
+/* Featured Section */
+.featured-section {
+  padding: 50px;
+  text-align: center; /* Center the title and items */
+}
+
+.section-title {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.featured-items {
+  display: flex;
+  justify-content: space-around; /* Evenly space the items */
+  flex-wrap: wrap;                /* Wrap items to the next line if they don't fit */
+}
+
+.featured-item {
+  width: 300px;                /* Set a width for each item */
+  margin-bottom: 30px;         /* Add space between items */
+  text-align: center;          /* Center text within each item */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 8px;
+}
+
+.featured-item img {
+  width: 100%;                  /* Make image take full width of the container */
+  height: 200px;               /* Set a fixed height for the image */
+  object-fit: cover;          /* Maintain aspect ratio and cover the container */
+  border-radius: 8px 8px 0 0;  /* Rounded corners for top of image */
+}
+
+.featured-item h3 {
+  margin-top: 10px;             /* Add space above the title */
+  font-size: 20px;
+}
+
+.featured-item p {
+  font-size: 16px;
+}
+
+/* Quote Section */
+.quote-section {
+  background-color: #f5f5f5; /* Light background color */
+  padding: 80px;
+  text-align: center;
+}
+
+.quote {
+  font-size: 30px;
+  font-style: italic;
+}
+
+
+/* About Section */
+.about-section {
+  padding: 50px;
+  text-align: center; /* Center text in about section */
 }
