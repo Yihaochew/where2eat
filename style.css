@@ -3,7 +3,7 @@ body {
     background-color: white;
     color: black;
     margin: 0;
-    font-size: 30px; /* Triple the original size */
+    font-size: 15px; /* Triple the original size */
   }
   
   nav ul {
@@ -15,11 +15,12 @@ body {
   
   nav li {
     display: inline;
-    margin-right: 60px; /* Triple the original margin */
+    margin-right: 10px; /* Triple the original margin */
   }
   
   nav a {
     text-decoration: none;
+    padding: 60px;
     color: black;
     font-size: 30px; /* Triple the original size */
   }
@@ -37,12 +38,12 @@ body {
   }
   
   .hero h1 {
-    font-size: 144px; /* Triple the original size */
+    font-size: 60px; /* Triple the original size */
   }
   
   .container {
     text-align: left;
-    padding: 60px; /* Triple the original padding */
+    padding: 50px; /* Triple the original padding */
   }
   
   .container img {
@@ -50,10 +51,17 @@ body {
     height: auto;
     margin-bottom: 60px; /* Triple the original margin */
   }
-  
-  footer {
-    text-align: center;
-    padding: 60px; /* Triple the original padding */
-    font-size: 36px; /* Triple the original size */
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
   }
-  
+
+  footer {
+    margin-top: auto; /* Push footer to bottom */
+    text-align: center;
+    padding: 30px; /* Triple the original padding */
+    font-size: 15px; /* Triple the original size */
+    background-color: #f0f0f0; /* Example background color */
+  }
