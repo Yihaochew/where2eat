@@ -65,3 +65,9 @@ body {
     font-size: 15px; /* Triple the original size */
     background-color: #f0f0f0; /* Example background color */
   }
+
+  nav ul li a img { 
+    height: 30px;         /* Adjust the size as needed */
+    margin: 0 10px;       /* Add spacing between the logos */
+    vertical-align: middle; /* Align logos vertically with text */
+  }
