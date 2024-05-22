@@ -71,3 +71,10 @@ body {
     margin: 0 10px;       /* Add spacing between the logos */
     vertical-align: middle; /* Align logos vertically with text */
   }
+
+  
+  nav ul li a img {
+    height: 30px;             /* Adjust logo size as needed */
+    margin-right: 5px;        /* Space between logo and text */
+  }
+  
