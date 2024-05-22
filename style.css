@@ -3,7 +3,8 @@ body {
     background-color: white;
     color: black;
     margin: 0;
-    font-size: 15px; /* Triple the original size */
+    font-size: 24px; /* Triple the original size */
+    padding: 0px 40px
   }
   
   nav ul {
@@ -11,18 +12,19 @@ body {
     padding: 0;
     background-color: transparent;
     text-align: center;
+    width: 100%;
   }
   
   nav li {
     display: inline;
-    margin-right: 10px; /* Triple the original margin */
+    margin-right: 0 15px; /* Triple the original margin */
   }
   
   nav a {
     text-decoration: none;
-    padding: 60px;
+    padding: 20px;
     color: black;
-    font-size: 30px; /* Triple the original size */
+    font-size: 24px; /* Triple the original size */
   }
   
   .hero {
@@ -35,15 +37,16 @@ body {
     justify-content: center;
     text-align: center;
     color: white;
+    padding: 0 50px
   }
   
   .hero h1 {
-    font-size: 60px; /* Triple the original size */
+    font-size: 96px; /* Triple the original size */
   }
   
   .container {
     text-align: left;
-    padding: 50px; /* Triple the original padding */
+    padding: 45px 40px; /* Triple the original padding */
   }
   
   .container img {
@@ -61,14 +64,14 @@ body {
   footer {
     margin-top: auto; /* Push footer to bottom */
     text-align: center;
-    padding: 30px; /* Triple the original padding */
-    font-size: 15px; /* Triple the original size */
+    padding: 45px; /* Triple the original padding */
+    font-size: 24px; /* Triple the original size */
     background-color: #f0f0f0; /* Example background color */
   }
 
   nav ul li a img { 
-    height: 30px;         /* Adjust the size as needed */
-    margin: 0 10px;       /* Add spacing between the logos */
+    height: 24px;         /* Adjust the size as needed */
+    margin: 5px;       /* Add spacing between the logos */
     vertical-align: middle; /* Align logos vertically with text */
   }
 
@@ -78,3 +81,64 @@ body {
     margin-right: 5px;        /* Space between logo and text */
   }
   
+  .about-content {
+    display: flex;             /* Use Flexbox for layout */
+    padding: 15px 40px
+  }
+  
+  .image-container,
+  .text-container {
+    flex: 1;                 /* Each container takes 50% width */
+    height: 100%;            /* Ensure full height for both */
+    padding: 15px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: 100%;            /* Make image fill container height */
+    object-fit: cover;       /* Maintain aspect ratio and cover container */
+  
+  }
+  /* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;  /* Smaller font on mobile */
+    padding: 0 20px;  /* Smaller padding on mobile */
+  }
+
+  nav ul {
+    text-align: left; /* Left-align menu on mobile */
+  }
+
+  nav li {
+    display: block;  /* Stack menu items vertically on mobile */
+    margin: 10px 0;  /* Vertical spacing between menu items on mobile */
+  }
+
+  nav a {
+    font-size: 18px; /* Smaller font on mobile */
+  }
+
+  .hero h1 {
+    font-size: 48px; /* Smaller font on mobile */
+  }
+
+  .about-content {
+    flex-direction: column; /* Stack image and text on mobile */
+  }
+
+  .image-container,
+  .text-container {
+    height: auto;         /* Allow containers to take natural height */
+  }
+
+  .container {
+    padding: 30px 20px;   /* Smaller padding on mobile */
+  }
+
+  footer {
+    padding: 30px;       /* Smaller padding on mobile */
+  }
+
+  /* Add more mobile-specific styles as needed */
+}
