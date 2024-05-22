@@ -53,8 +53,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  color: white;
+  text-align: left;
+  color: black;
   padding: 0 0px
 }
   .hero h1 {
