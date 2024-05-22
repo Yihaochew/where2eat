@@ -31,8 +31,9 @@ body {
   nav a:hover {
     text-decoration: underline; /* Add underline on hover */
   }
+
   .hero {
-    background-image: url("https://i.ibb.co/YQdqrwJ/openart-image-RVi33lr7-1715650818970-raw.jpg");
+    background-image: url("/Images/warm-meal.png");
     background-size: cover; /* Cover the whole viewport */
     background-position: center;
     min-height: 100vh; /* Ensure it covers the full height */
@@ -44,12 +45,24 @@ body {
     padding: 0 50px
   }
   
+  .hero-about{
+  background-image: url("https://i.ibb.co/YQdqrwJ/openart-image-RVi33lr7-1715650818970-raw.jpg");
+  background-size: cover; /* Cover the whole viewport */
+  background-position: center;
+  min-height: 100vh; /* Ensure it covers the full height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 0px
+}
   .hero h1 {
     font-size: 96px; /* Triple the original size */
   }
   
   .container {
-    text-align: left;
+    text-align: center;
     padding: 45px 40px; /* Triple the original padding */
   }
   
@@ -103,6 +116,7 @@ body {
     object-fit: cover;       /* Maintain aspect ratio and cover container */
   
   }
+  
   /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
   body {
