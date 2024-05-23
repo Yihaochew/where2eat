@@ -127,7 +127,7 @@ window.initMap = initMap;
 // require('dotenv').config();
 
 // Now you can access the environment variables like this:
-const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+const apiKey = 'AIzaSyC5hG-Od1EKfzGYf0f9qLD7uc5H1suZSt0';
 
   // Data for featured items (hardcoded)
   const featuredItems = [
@@ -170,7 +170,6 @@ const apiKey = process.env.GOOGLE_MAPS_API_KEY;
       const j = Math.floor(Math.random() * (i + 1));
       [featuredItems[i], featuredItems[j]] = [featuredItems[j], featuredItems[i]];
     }
-    console.log(featuredItems)
     const featuredItemsContainer = document.querySelector('.featured-items');
     featuredItemsContainer.innerHTML = ''; // Clear previous items
 
