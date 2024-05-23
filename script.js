@@ -1,5 +1,3 @@
-require('dotenv').config()
-
 let map;
 async function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
@@ -64,20 +62,21 @@ const recommendations = [
 function populateDropdowns() {
   const filters = ["cuisine", "budget", "location", "mealType", "publicTransport"];
 
-  filters.forEach(filterId => {
-    const select = document.getElementById(filterId);
-    // Get existing options
-    const existingOptions = Array.from(select.options).map(option => option.value);
-    const uniqueOptions = [...new Set(recommendations.map(location => location[filterId]))];
-    uniqueOptions.forEach(option => {
-      if (!existingOptions.includes(option)) { // Add only if not already present
-        const optionElement = document.createElement("option");
-        optionElement.value = option;
-        optionElement.text = option;
-        select.appendChild(optionElement);
-      }
-    });
-  });
+  // Commented out to avoid error for now
+  // filters.forEach(filterId => {
+  //   const select = document.getElementById(filterId);
+  //   // Get existing options
+  //   const existingOptions = Array.from(select.options).map(option => option.value);
+  //   const uniqueOptions = [...new Set(recommendations.map(location => location[filterId]))];
+  //   uniqueOptions.forEach(option => {
+  //     if (!existingOptions.includes(option)) { // Add only if not already present
+  //       const optionElement = document.createElement("option");
+  //       optionElement.value = option;
+  //       optionElement.text = option;
+  //       select.appendChild(optionElement);
+  //     }
+  //   });
+  // });
 }
   
 // Function to filter locations
@@ -121,10 +120,11 @@ function generateRecommendations() {
 }
 
 // Call populateDropdowns when the page loads
-// populateDropdowns();
+populateDropdowns();
 
 window.initMap = initMap;
 
+// require('dotenv').config();
 
 // Now you can access the environment variables like this:
 const apiKey = process.env.GOOGLE_MAPS_API_KEY;
@@ -159,7 +159,7 @@ const apiKey = process.env.GOOGLE_MAPS_API_KEY;
 
   // Event listener for "Feeling Lucky" button
   window.onload = function () {
-    document.getElementById("feelingLuckyBtn").addEventListener("click", ()=>console.log("hello"));
+    document.getElementById("feelingLuckyBtn").addEventListener("click", displayFeaturedItems);
   };
   
   // Function to display random featured items
