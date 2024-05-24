@@ -5,22 +5,6 @@ async function initMap() {
     center: { lat: 1.3521, lng: 103.8198 }, // Centered on Singapore
   });
 }
-
-function addMarkers(locations) {
-  locations.forEach(location => {
-    const marker = new google.maps.Marker({
-      position: location,
-      map: map // Explicitly set the map property
-    });
-
-    const infoWindow = new google.maps.InfoWindow({
-      content: `<div><strong><span class="math-inline">\{location\.name\}</strong\><br\></span>{location.address}</div>`,
-    });
-    marker.addListener("click", () => {
-      infoWindow.open(map, marker);
-    });
-  });
-}
     
 // Hardcoded recommendations with location data
 const recommendations = [
@@ -119,6 +103,22 @@ function generateRecommendations() {
   addMarkers([randomLocation]); // Add a marker for the single recommendation
 }
 
+
+function addMarkers(locations) {
+  locations.forEach(location => {
+    const marker = new google.maps.Marker({
+      position: location,
+      map: map // Explicitly set the map property
+    });
+
+    const infoWindow = new google.maps.InfoWindow({
+      content: `<div><strong><span class="math-inline">${location.name}</strong\><br\></span>${location.address}</div>`,
+    });
+    marker.addListener("click", () => {
+      infoWindow.open(map, marker);
+    });
+  });
+
 // Call populateDropdowns when the page loads
 populateDropdowns();
 
@@ -192,3 +192,4 @@ const apiKey = 'AIzaSyC5hG-Od1EKfzGYf0f9qLD7uc5H1suZSt0';
 
 
 window.initMap = initMap; // Make initMap available globally
+}
