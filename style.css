@@ -42,14 +42,13 @@ body {
     justify-content: center;
     text-align: center;
     color: white;
-    padding: 0 50px
+    padding: 0 30px
   }
   
   .hero-about{
-  background-image: url("https://i.ibb.co/YQdqrwJ/openart-image-RVi33lr7-1715650818970-raw.jpg");
   background-size: cover; /* Cover the whole viewport */
   background-position: center;
-  min-height: 100vh; /* Ensure it covers the full height */
+  min-height: 400px; /* Ensure it covers the full height */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,7 +57,7 @@ body {
   padding: 0 0px
 }
   .hero h1 {
-    font-size: 96px; /* Triple the original size */
+    font-size: 86px; /* Triple the original size */
   }
   
   .container {
@@ -99,16 +98,14 @@ body {
   }
   
   .about-content {
-    display: flex;             /* Use Flexbox for layout */
-    padding: 15px 40px
+    padding: 30px;
+    text-align: center; /* Center the content */
   }
   
   .image-container,
-  .text-container {
-    flex: 1;                 /* Each container takes 50% width */
-    height: 100%;            /* Ensure full height for both */
-    padding: 15px;
-  }
+  .text-container { /* Removed unnecessary flex properties */
+    text-align: left;  /* Align text to the left for better readability */
+}
   
   .image-container img {
     max-width: 100%;
@@ -138,7 +135,8 @@ body {
   }
 
   .hero h1 {
-    font-size: 48px; /* Smaller font on mobile */
+    font-size: 3em; /* Responsive font size using em units */
+    margin-bottom: 15px;
   }
 
   .about-content {
@@ -214,6 +212,18 @@ body {
   font-style: italic;
 }
 
+.about-content {
+  margin-top: 10px;             /* Add space above the title */
+  font-size: 20px;
+}
+
+.about-section {
+  width: 300px;                /* Set a width for each item */
+  margin-bottom: 30px;         /* Add space between items */
+  text-align: center;          /* Center text within each item */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 8px;
+}
 
 /* About Section */
 .about-section {
