@@ -240,7 +240,7 @@ select, button {
   border-radius: 5px;  
   font-size: 18px; 
   margin-bottom: 15px;
-  width: 100%;           /* Make dropdowns take full width of their container */
+  width: 40%;           /* Make dropdowns take full width of their container */
   box-sizing: border-box;/* Include padding and border in the element's total width and height */
 }
 
