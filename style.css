@@ -42,11 +42,12 @@ body {
     justify-content: center;
     text-align: center;
     color: white;
-    padding: 0 30px
+    padding: 0px 600px
   }
   
   .hero-about{
   background-size: cover; /* Cover the whole viewport */
+  border: #f05454;
   background-position: center;
   min-height: 400px; /* Ensure it covers the full height */
   display: flex;
@@ -54,7 +55,9 @@ body {
   justify-content: center;
   text-align: left;
   color: black;
-  padding: 0 0px
+  padding: 0 500px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 8px;
 }
   .hero h1 {
     font-size: 86px; /* Triple the original size */
@@ -62,7 +65,7 @@ body {
   
   .container {
     text-align: center;
-    padding: 45px 40px; /* Triple the original padding */
+    padding: 85px 40px; /* Triple the original padding */
   }
   
   .container img {
@@ -146,6 +149,7 @@ body {
   .image-container,
   .text-container {
     height: auto;         /* Allow containers to take natural height */
+    /*padding: 30px 20px;*/
   }
 
   .container {

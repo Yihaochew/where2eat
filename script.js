@@ -254,7 +254,6 @@ const apiKey = 'AIzaSyC5hG-Od1EKfzGYf0f9qLD7uc5H1suZSt0';
     { name: "Kaya Toast", image: "images/kaya_toast.jpg", description: "Toasted bread with coconut jam and butter – a classic Singaporean breakfast." },
     { name: "Hokkien Mee", image: "images/hokkien_mee.jpg", description: "Stir-fried noodles with seafood and pork in a flavorful broth." },
     { name: "Satay", image: "images/satay.jpg", description: "Grilled skewered meat (chicken, beef, or mutton) with peanut sauce – a popular street food." },
-    { name: "Nasi Lemak", image: "images/nasi_lemak.jpg", description: "Fragrant rice cooked in coconut milk and pandan leaf, served with crispy fried chicken, sambal, ikan bilis (anchovies), peanuts, and cucumber. },
     { name: "Bak Kut Teh", image: "images/bak_kut_teh.jpg", description: "Peppery pork rib soup, often eaten for breakfast." },
     { name: "Ice Kachang", image: "images/ice_kachang.jpg", description: "A colorful shaved ice dessert topped with sweet treats and syrups." },
     { name: "Char Kway Teow", image: "images/char_kway_teow.jpg", description: "Stir-fried flat rice noodles with cockles, bean sprouts, and Chinese sausage – a savory delight." },
@@ -287,7 +286,8 @@ const apiKey = 'AIzaSyC5hG-Od1EKfzGYf0f9qLD7uc5H1suZSt0';
     { name: "Fish and Chips", image: "Images/FishChips.jpg", description: "Crispy battered fish and golden fries – a fun and tasty combination that kids love. Look for options with smaller portions for younger children." },
     { name: "Pasta", image: "Images/Pasta.jpg", description: "Choose from a variety of pasta shapes and sauces, like spaghetti bolognese or macaroni and cheese. A versatile dish that can be tailored to a child's preferences." },
     { name: "Chicken Nuggets", image: "Images/ChickenNuggets.jpg", description: "Bite-sized pieces of breaded chicken that are easy for kids to eat and enjoy. Often served with dipping sauces like ketchup or barbecue sauce." },
-    { name: "Ice Cream", image: "Images/IceCream.jpg", description: "A sweet treat that is always a hit with kids! Choose from classic flavors like vanilla and chocolate, or try more adventurous options like durian or teh tarik." }
+    { name: "Ice Cream", image: "Images/IceCream.jpg", description: "A sweet treat that is always a hit with kids! Choose from classic flavors like vanilla and chocolate, or try more adventurous options like durian or teh tarik." },
+    { name: "Nasi Lemak", image: "images/nasi_lemak.jpg", description: "Fragrant rice cooked in coconut milk and pandan leaf, served with crispy fried chicken, sambal, ikan bilis (anchovies), peanuts, and cucumber." }
   ];
   
 
