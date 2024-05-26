@@ -42,12 +42,11 @@ body {
     justify-content: center;
     text-align: center;
     color: white;
-    padding: 0px 600px
+    padding: 0 100px
   }
   
   .hero-about{
   background-size: cover; /* Cover the whole viewport */
-  border: #f05454;
   background-position: center;
   min-height: 400px; /* Ensure it covers the full height */
   display: flex;
@@ -59,6 +58,7 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   border-radius: 8px;
 }
+
   .hero h1 {
     font-size: 86px; /* Triple the original size */
   }
