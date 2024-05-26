@@ -287,7 +287,7 @@ const apiKey = 'AIzaSyC5hG-Od1EKfzGYf0f9qLD7uc5H1suZSt0';
     { name: "Pasta", image: "Images/Pasta.jpg", description: "Choose from a variety of pasta shapes and sauces, like spaghetti bolognese or macaroni and cheese. A versatile dish that can be tailored to a child's preferences." },
     { name: "Chicken Nuggets", image: "Images/ChickenNuggets.jpg", description: "Bite-sized pieces of breaded chicken that are easy for kids to eat and enjoy. Often served with dipping sauces like ketchup or barbecue sauce." },
     { name: "Ice Cream", image: "Images/IceCream.jpg", description: "A sweet treat that is always a hit with kids! Choose from classic flavors like vanilla and chocolate, or try more adventurous options like durian or teh tarik." },
-    { name: "Nasi Lemak", image: "images/nasi_lemak.jpg", description: "Fragrant rice cooked in coconut milk and pandan leaf, served with crispy fried chicken, sambal, ikan bilis (anchovies), peanuts, and cucumber." }
+    { name: "Nasi Lemak", image: "Images/nasi_lemak.jpg", description: "Fragrant rice cooked in coconut milk and pandan leaf, served with crispy fried chicken, sambal, ikan bilis (anchovies), peanuts, and cucumber." }
   ];
   
 
