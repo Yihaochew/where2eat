@@ -1,5 +1,5 @@
 body {
-    font-family: 'Lora';
+    font-family: 'Poppins', sans-serif; /* Modern & clean */
     background-color: white;
     color: black;
     margin: 0;
@@ -26,7 +26,8 @@ body {
     padding: 20px;
     color: black;
     font-size: 24px; /* Triple the original size */
-    font-weight: bold
+    font-family: 'Montserrat', sans-serif; /* Modern & clean */
+    
   }
 
   nav a:hover {
@@ -59,7 +60,8 @@ body {
   }
 
   .hero h1 {
-    font-size: 86px; /* Triple the original size */
+    font-family: 'Bungee', cursive; /* Bold and expressive */
+    font-size: 70px; /* Triple the original size */
   }
   
   .container {
@@ -88,6 +90,11 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     border-radius: 8px;
   }
+
+  nav ul li a {
+    font-family: 'Montserrat', sans-serif; /* Modern & clean */
+  }
+  
 
   nav ul li a img { 
     height: 24px;         /* Adjust the size as needed */
@@ -166,13 +173,13 @@ body {
 
 /* Featured Section */
 .featured-section {
-  padding: 50px;
+  padding: 10px;
   text-align: center; /* Center the title and items */
 }
 
 .section-title {
   font-size: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 .featured-items {

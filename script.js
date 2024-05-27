@@ -15,7 +15,8 @@ function addMarkers(locations) {
     });
 
     const infoWindow = new google.maps.InfoWindow({
-      content: `<div><strong><span class="math-inline">${location.name}</strong\><br\></span><strong>Address </strong>${location.address}<br><strong>Budget </strong>${location.budget}<br><strong>Cuisine </strong>${location.cuisine}</div>`,
+      content: `<div><strong><span class="math-inline">${location.name}</strong\><br\></span><strong>Address </strong>${location.address}<br><strong>Budget </strong>${location.budget}<br><strong>Cuisine </strong>${location.cuisine}<br><a href="https://www.google.com/maps/dir/?api=1&destination=${(location.address)}" target="_blank"><strong>Direction here</strong></a>
+      </div>`,
     });
     marker.addListener("click", () => {
       infoWindow.open(map, marker);
@@ -249,7 +250,7 @@ const apiKey = 'AIzaSyC5hG-Od1EKfzGYf0f9qLD7uc5H1suZSt0';
   const featuredItems = [
     { name: "Singaporean Laksa", image: "Images/laksa.png", description: "A spicy, coconut milk-based noodle soup that's a national treasure." },
     { name: "Hainanese Chicken Rice", image: "Images/chickenrice.png", description: "Tender poached chicken served with fragrant rice – a must-try local dish." },
-    { name: "Chilli Crab", image: "Images/ChilliCrab.jpg", description: "Messy, delicious, and iconic – Singapore's most famous seafood dish." },
+    { name: "Chilli Crab", image: "Images/chilicrab.png", description: "Messy, delicious, and iconic – Singapore's most famous seafood dish." },
     { name: "Roti Prata", image: "Images/roti_prata.jpg", description: "Crispy, flaky flatbread served with savory curry – a breakfast favorite." },
     { name: "Kaya Toast", image: "Images/kaya_toast.jpg", description: "Toasted bread with coconut jam and butter – a classic Singaporean breakfast." },
     { name: "Hokkien Mee", image: "Images/hokkien_mee.jpg", description: "Stir-fried noodles with seafood and pork in a flavorful broth." },
